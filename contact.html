@@ -2,135 +2,189 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <style>
-        .name {
-            background-color: teal;
-            color: beige;
-            margin-right: 19px;
-            margin-left: 20px;
-            padding: 10px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+       * {
+      box-sizing: border-box;
+    }
+ .name {
+    background-color: teal;
+    color: beige;
+    margin-left: 34px;
+    padding: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+    nav {
+      background-color: gainsboro;
+    
 
-        nav {
-            background-color: gainsboro;
+    }
 
-        }
+    nav ul a {
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      font-size: 1rem;
+      color: rgb(77, 76, 76);
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+    }
 
-        nav ul a {
-            -webkit-transition: background-color .3s;
-            transition: background-color .3s;
-            font-size: 1rem;
-            color: rgb(77, 76, 76);
-            display: block;
-            padding: 0 15px;
-            cursor: pointer;
-        }
+    html, body {
+      margin:0;
+   padding:0;
+   height:100%;
+    min-height: 100vh;
+    flex-direction: column;
+      background-color: rgb(170, 169, 169);
+   padding-bottom:60px; 
 
-        body {
-            background-color: beige;
+    }
 
-        }
+   
 
-        footer {
-            background-color: darkgray;
-            height: 60px;
-            width: 100vw;
-            border-top: 5px solid green;
-        }
+    #container {
+      height: 561px;
+    width: 394px;
+    background-color: beige;
+    margin: 30px;
+    margin-bottom: 30px;
+    }
 
-        .container {
-            height: 530px;
-            width: 400px;
-            background-color: rgb(255, 157, 222);
-            margin: 50px;
-        }
-        h5 {
-            color:teal;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            border-bottom: 2px solid gray;
-        }
+    #message {
+      background-color: white;
+      overflow: auto;
 
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical
-              
-        }
+    }
+    #name1,#email {
+      width:100%;
+    }
 
-        input[type=submit] {
-            background-color:teal;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+  
+    .col .row {
 
+      margin-left: -0.75rem;
+      margin-right: 0.25rem;
+      margin-top: 3rem;
      
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
+      
+    }
 
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        
-    </style>
+  label, textarea {
+    color: #070707;
+      font-size: 1rem;
+      cursor: text;
+  }
+    input[type=submit] {
+      background-color: teal;
+    color: white;
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+    margin: -28px;
+    margin-left: -1px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #7e7e7e;
+}
+.page-footer {
+  background-color: rgb(87, 86, 86);
+    height: 62px;
+    width: 100vw;
+    border-top: 5px solid green;
+    text-align: center;
+}
+#mainCon {
+  height: 100%;
+}
+
+
+#footer {
+  clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 70px;
+}
+ 
+      
+  </style>
+
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="./index.html" class="name">Harley Gagaring</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-
-
-    <div class="container">
-
-    <h5>Contact</h5>
-        <form action="action_page.php">
-
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your Email..">
-
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" class= "submit" value="Submit" >
-
-        </form>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="./index.html" class="name">Harley Gagaring</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+
+
+<div id="mainCon">
+  <div id="container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class=" col s12">
+            <label for="name1">Name:
+              <input id="name1" name= "name" type="textarea">
+            </label>
+          </div>
+        </div>
+          <div class="row">
+            <div class= "col s12">
+              <label for="email">Email:
+                <input id="email" name = "email" type="textarea">
+              </label>
+            </div>
+          </div>
+        
+
+        <div class="row">
+          <div class="col s12">
+            <label for="text">message:
+             
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+            </label>
+          </div>
+        </div>
+<div class="row">
+    <div class="col s12">
+    <input type="submit" value="Submit">
+    </div>
+</div>
+
+    </div>
+  
+
+  
+     
+</div>
+</div>
 
 
 
-
-    <footer></footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<div id="footer">
+    <footer class="page-footer">     
+            
+                  
+        © 2014 Copyright Text
+     
+      
+    </footer>
+    </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

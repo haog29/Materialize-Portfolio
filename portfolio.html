@@ -2,85 +2,290 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <style>
-    .name {
-      background-color: teal;
-      color: beige;
-      margin-right: 19px;
-      margin-left: 20px;
-      padding: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .name {
+            background-color: teal;
+            color: beige;
+            margin-left: 34px;
+            padding: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background-color: gainsboro;
+
+        }
+
+        nav ul a {
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            font-size: 1rem;
+            color: rgb(77, 76, 76);
+            display: block;
+            padding: 0 15px;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: rgb(170, 169, 169);
+
+        }
+
+        .page-footer {
+            background-color: rgb(87, 86, 86);
+            height: 62px;
+            width: 100vw;
+            border-top: 5px solid green;
+            text-align: center;
+        }
+
+        #mainCon {
+            height: 100%;
+        }
+
+
+        #footer {
+            clear: both;
+            position: relative;
+            height: 40px;
+            margin-top: 30px;
+        }
+
+
+        .port {
+            background-color: rgb(255, 255, 255);
+            height: 700px;
+            width: 500px;
+
+            padding: 30px;
+            margin: 30px 30px 300px 30px;
+        }
+
+        h6 {
+            color: teal;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-bottom: 2px solid gray;
+            padding: 9px;
+            margin-bottom: 10px;
+        }
+      .container  {
+      position: absolute;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+  
+     .row{
+        margin-left: 61px;
+    margin-bottom: 35px;
+    margin-top: 36px;
+}
+     
+       
+
+    .shk {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-740%, -249%);
+    color: white;
+    font-size: 11px;
+    padding: 13px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     }
 
-    nav {
-      background-color: gainsboro;
-
-    }
-
-    nav ul a {
-      -webkit-transition: background-color .3s;
-      transition: background-color .3s;
-      font-size: 1rem;
-      color: rgb(77, 76, 76);
-      display: block;
-      padding: 0 15px;
+    
+    .chm {
+      position: absolute;
+      top: -7%;
+    left: 30%;
+      transform: translate(-190%, 903%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
       cursor: pointer;
+      border-radius: 5px
     }
 
-    body {
-      background-color: beige;
-
+    .kya{
+      position: absolute;
+      top: 14%;
+      left: 6%;
+      transform: translate(79%, 903%);
+      -ms-transform: translate(-14%, -6%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
     }
 
-    footer {
-      background-color: darkgray;
-      height: 60px;
-      width: 100vw;
-      border-top : 5px solid green;
+    
+    .tat {
+      position: absolute;
+      top: -14%;
+    left: 27%;
+    transform: translate(-157%, 1470%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
     }
 
-    .port {
-        background-color: pink;
-        height: 700px;
-        width: 500px;
-        /* margin-bottom: 300px; */
-        padding: 30px;
-        margin : 30px 30px 300px 30px;    }
-    h6 {
-        color: teal;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        border-bottom: 2px solid gray;
-        padding: 9px;
+     
+    .mang {
+      position: absolute;
+      top: 5%;
+    left: 3%;
+    transform: translate(119%, 1470%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #555;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+    .rj {
+      position: absolute;
+      top: 4%;
+    left: 16%;
+    transform: translate(119%, 1475%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: teal;
+      color: white;
+      font-size: 11px;
+      padding: 12px 24px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px
+    }
+
+
+    .shk,
+        .chm,
+        .mang,
+        .tat,
+        .kya,
+        .rj :hover {
+      background-color: teal;
+     
     }
     
-  </style>
+        img,
+       {
+        position: absolute;
+        margin-left: 82px;
+            margin-top: 14px;
+            padding-top: 4px;
+        }
+
+        @media (max-width: 640px, 768px, 980px) {
+
+nav,
+footer, .btn, img, .shk,
+        .chm,
+        .mang,
+        .tat,
+        .kya,
+        .rj{
+
+  position:absolute;
+}
+}
+        
+    </style>
 </head>
 
 <body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="./index.html" class="name">Harley Gagaring</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="./index.html">About</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="./index.html" class="name">Harley Gagaring</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="container">
+        <div class="port">
+            <h6>Portfolio</h6>
+
+            <div class="row">
+
+                <div class="col s6 m8 l5"> 
+                    <img src="./assets/images/shooky.jpg" alt="Shooky" style="height: 100px">
+                    <button class="shk">Shooky</button>
+
+                </div>
+
+                <div class="col s5 m8  l5">
+                    <img src="./assets/images/chimmy.jpg" alt="Chimmy" style="height: 100px">
+                    <button class="chm">Chimmy</button>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="col s5 m8  l5"> 
+                    <img src="./assets/images/koya.jpg" alt="Koya" style="height: 100px">
+                    <button class="kya">Koya</button>
+
+                </div>
+                <div class="col s5 m8  l5">
+                    <img src="./assets/images/tata.jpg" alt="Tata" style="height: 100px">
+                    <button class="tat">Tata</button>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col s5 m8  l5"> 
+                    <img src="./assets/images/mang.jpg" alt="Mang" style="height: 100px">
+                    <button class="mang">Mang</button>
+
+                </div>
+                <div class="col s5 m8  l5">
+                    <img src="./assets/images/rj.jpg" style="height: 100px">
+                    <button class="rj">Rj</button>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-  </nav>
+    <div id="footer">
+        <footer class="page-footer">
 
- 
-<div id="container">
-    <div class="port">
-        <h6>Portfolio</h6>
 
+            © 2014 Copyright Text
+
+
+        </footer>
     </div>
-</div>
-  <footer></footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

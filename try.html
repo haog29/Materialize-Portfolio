@@ -39,20 +39,19 @@
     }
 
     body {
-      background-color: rgb(170, 169, 169);
+      background-color: beige;
 
     }
 
-    .page-footer {
-  background-color: rgb(87, 86, 86);
-    height: 62px;
-    width: 100vw;
-    border-top: 5px solid green;
-    text-align: center;
-}
+    footer {
+      background-color: darkgray;
+      height: 60px;
+      width: 100vw;
+      border-top: 5px solid green;
+    }
 
     .content {
-      background-color: beige;
+      background-color: darkgray;
       width: 511px;
       height: 351px;
       padding: 20px;
@@ -79,7 +78,7 @@
     p {
       float: right;
       width: 359px;
-      padding-top: 1px;
+      padding-top: 19px;
 
 
     }
@@ -88,15 +87,17 @@
       width: 460px;
 
     }
-    .mainCon {
-      height: 100%;
-    }
-    #footer {
-  clear: both;
-    position: relative;
-    height: 40px;
-    margin-top: 30px;
-}
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
 
     /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
@@ -127,7 +128,6 @@
     </div>
   </nav>
 
-  <div class="mainCon">
   <div id="container">
     <div class="content">
       <h6>About</h6>
@@ -148,16 +148,12 @@
 
   </div>
 
-</div>
-  <div id="footer">
-      <footer class="page-footer">     
-              
-                    
-          © 2014 Copyright Text
-       
-        
-      </footer>
-      </div>
+  <footer>
+        <div class="footCon">
+                © 2019 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
